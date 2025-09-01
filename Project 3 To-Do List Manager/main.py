@@ -16,7 +16,7 @@ tasks = []
 # Step 3: Load tasks from file
 def load_tasks():
     try:
-        with open(r"C:\Users\Neeraj Bhardwaj\Desktop\Python Projects\Projects\Python\3. To-Do List Manager\tasks.txt", "r") as file:
+        with open(r"tasks.txt", "r") as file:
             for line in file:
                 tid, desc, status = line.strip().split(",")
                 tasks.append([int(tid), desc, status])
